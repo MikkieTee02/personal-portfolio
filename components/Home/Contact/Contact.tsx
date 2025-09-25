@@ -105,13 +105,13 @@ const Contact = () => {
           </div>
           {/*Social icons*/}
           <div className="flex items-center mt-8 space-x-3">
-            <div className="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center flex-col cursor-pointer hover:bg-slate-800 transition-all duration-300">
+            <div className="w-14 h-14 bg-slate-900 rounded-full border-2 flex items-center justify-center flex-col cursor-pointer hover:bg-slate-800 transition-all hover:border-teal-500 duration-300">
               <FaLinkedin className="text-gray-500 w-6 h-6" />
             </div>
-            <div className="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center flex-col cursor-pointer hover:bg-slate-800 transition-all duration-300">
+            <div className="w-14 h-14 bg-slate-900 rounded-full border-2 flex items-center justify-center flex-col cursor-pointer hover:bg-slate-800 hover:border-teal-500 transition-all duration-300">
               <FaGithub className="text-gray-500 w-6 h-6" />
             </div>
-            <div className="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center flex-col cursor-pointer hover:bg-slate-800 transition-all duration-300">
+            <div className="w-14 h-14 bg-slate-900 rounded-full border-2 flex items-center justify-center flex-col cursor-pointer hover:bg-slate-800 hover:border-teal-500 transition-all duration-300">
               <FaWhatsapp className="text-gray-500 w-6 h-6" />
             </div>
           </div>
@@ -176,8 +176,8 @@ const Contact = () => {
 
             <button
               type="submit"
-            
-              className="w-full bg-teal-400 hover:bg-teal-500 text-slate-900 py-3 rounded-md inline-flex items-center justify-center gap-2"
+
+              className="w-full bg-teal-400 hover:bg-teal-500 hover:shadow-lg hover:shadow-teal-600/50 text-slate-900 py-3 rounded-md inline-flex items-center justify-center gap-2 transition-all duration-300"
             >
               <div className=" flex items-center space-x-2 ">
                 {status === "loading" ? "Sending..." : "Send Message"}

@@ -82,6 +82,12 @@ const skillsData = [
     },
 
 
+       {
+         id:11,
+        name: "MongoDB",
+        icon: <SiPostgresql/>,
+        percentage: 60,
+    },
 
 ]
 const Skills = () => {

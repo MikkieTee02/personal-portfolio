@@ -10,13 +10,16 @@ type Props = {
 const ReviewCard = ({ name, image, role }: Props) => {
   return (
     <div className="m-2 ">
-      <Image
-        src={image}
-        alt="client"
-        width={60}
-        height={60}
-        className="rounded-full"
-      />
+      <div className="  overflow-hidden rounded-full">
+    <Image
+      src={image}
+      alt="client"
+      width={60}
+      height={60}
+      className="object-cover rounded-full"
+    />
+  </div>
+
       <p className="mt-6 text-base text-gray-400 font-medium">
         &quot; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam veniam
         ipsa molestiae magni minima quo itaque, quasi velit hic consequuntur!   &quot;

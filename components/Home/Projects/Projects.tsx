@@ -7,7 +7,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projectsData = [
   {
-    title: "Web Development",
+    title: "Website Development",
     category: "Frontend",
     image: "/images/chamabondo.png",
     technologies: ["React", "JavaScript", "Tailwind"],
@@ -16,10 +16,10 @@ const projectsData = [
     demoLink: "https://demo.com",
   },
   {
-    title: "Frontend Development",
-    category: "UI/UX",
-    image: "/images/chamabondo.png",
-    technologies: ["Next J.S", "Tailwind", "MongoDB"],
+    title: "Blog app",
+    category: "Frontend and Backend",
+    image: "/images/project.png",
+    technologies: ["Next J.S", "Tailwind", "MongoDB", "Typescript"],
     description: "Description of project 2",
     githubLink: "https://github.com",
     demoLink: "https://demo.com",

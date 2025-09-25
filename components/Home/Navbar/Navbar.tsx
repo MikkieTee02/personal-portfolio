@@ -67,7 +67,7 @@ const Navbar = ({ openNav }: Props) => {
           <Link
             href="/images/Mikaela-Resume.pdf"
             target="_blank"
-            className="bg-teal-400 text-slate-950 p-2.5 px-6 rounded-xl text-base font-semibold hover:bg-purple-400 hover:text-dark border-solid border-transparent hover:border-dark border-2 transition-all duration-300"
+            className="bg-teal-400 text-slate-950 p-2.5 px-6 rounded-xl text-base font-semibold hover:bg-purple-400 hover:text-dark border-solid border-transparent hover:border-dark border-2 hover:shadow-lg hover:shadow-teal-400/50 transition-all duration-300"
             download
           >
             Resume
