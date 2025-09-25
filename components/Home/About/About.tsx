@@ -13,22 +13,47 @@ const fadeInUp = {
 
 const About = () => {
   return (
-    <div className="pt-20 pb-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left side - Text */}
-        <motion.div variants={fadeInUp} className="text-left">
-          <h2 className="text-teal-400 text-center lg:text-left text-xl md:text-3xl xl:text-4xl font-medium mb-4">
+    <div className="pt-16 pb-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+       <h2 className="text-teal-400 text-center  text-xl md:text-3xl xl:text-4xl font-medium mb-4">
             About Me
           </h2>
 
           {/*underline*/}
-          <div className="mx-auto lg:mx-0 h-1 w-40 flex rounded-md mb-8">
+          <div className="mx-auto  h-1 w-40 flex rounded-md mb-8">
             <div className="w-1/4 bg-gray-700"></div>
-            <div className="w-1/2 bg-teal-500"></div>
+            <div className="w-1/2 bg-yellow-500"></div>
             <div className="w-1/4 bg-gray-700"></div>
           </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+
+        
+        {/* Left side - Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative"
+        >
+          <div className="relative w-full max-w-md mx-auto">
+            <div className="absolute inset-0 bg-gradient-to-r from-teal-300 to-purple-600 rounded-2xl blur-2xl opacity-60 animate-pulse"></div>
+            <div className="relative z-10 w-full h-96 rounded-2xl overflow-hidden">
+              <Image
+                src="/images/Mikaela.svg"
+                alt="Mikaela Nyamasoka"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 400px"
+                priority
+              />
+            </div>
+          </div>
+        </motion.div>
+        {/* Right side - Text */}
+        <motion.div variants={fadeInUp} className="text-left">
+         
+
+          <p className="text-gray-400 text-base mb-6 leading-relaxed">
             Hi, I'm Mikaela Nyamasoka, a passionate full-stack developer, designer, and community advocate.
             With expertise in modern web technologies, I create responsive, user-friendly applications that
             combine technical excellence with creative design.
@@ -65,27 +90,6 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Right side - Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative"
-        >
-          <div className="relative w-full max-w-md mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-r from-teal-300 to-purple-600 rounded-2xl blur-2xl opacity-60 animate-pulse"></div>
-            <div className="relative z-10 w-full h-96 rounded-2xl overflow-hidden">
-              <Image
-                src="/images/Mikaela.svg"
-                alt="Mikaela Nyamasoka"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 400px"
-                priority
-              />
-            </div>
-          </div>
-        </motion.div>
       </div>
     </div>
   )
