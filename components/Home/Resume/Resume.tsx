@@ -27,24 +27,28 @@ const Resume = () => {
             <ResumeCard
               Icon={FaCodepen}
               role="Volunteer instructor"
+               date="2018-2019"
               description="I am part of a team of volunteer instructors who teach kids how to code through Scratch platform. We also volunteer for environmental clean up and exam invigilation in schools"
             />
 
             <ResumeCard
               Icon={FaReact}
               role="Tie and Dye"
+               date="2018-2019"
               description="I made custom tie and dye t-shirts from scratch. I explored my creative side and enjoyed my work. I made sure my clients were satisfied with my products"
             />
 
             <ResumeCard
               Icon={FaCodepen}
               role="Creative Director"
+               date="2018-2019"
               description="I manage the company's work and make sure they meet clients' needs.  This includes the UI design, graphic design, web design departments"
             />
 
             <ResumeCard
               Icon={FaCodepen}
               role="Nationwide volunteer"
+               date="2018-2019"
               description="I volunteer at church, through contributing to the local design comittee. This included plumbing and helping at constructions"
             />
           </div>

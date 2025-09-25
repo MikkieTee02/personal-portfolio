@@ -13,7 +13,7 @@ type ResumeProps = {
 
 const ResumeCard = ({role, Icon, date, description}:ResumeProps) => {
   return (
-    <div className='mb-6 '>
+    <div className='mb-6 hover:shadow-lg '>
        <div className=' md:h-52 flex items-start space-x-6 bg-slate-800 transition-all duration-300 p-4 sm:p-8 border-slate-700  hover:border-teal-400 group border-2 rounded-lg'>
        <div className='sm:h-14 sm:w-14 w-10  h-10 bg-slate-950 border-2 rounded-full flex items-center justify-center
        flex-col group-hover:border-teal-500'>
@@ -21,7 +21,7 @@ const ResumeCard = ({role, Icon, date, description}:ResumeProps) => {
        </div>
        <div className='flex-1'>
         {date && (
-          <h1 className='mb-2 sm:px-6 sm:py-1.5 px-4 py-1 rounded-full bg-gray-400 text-gray-700 w-fit
+          <h1 className='mb-2 sm:px-6 sm:py-1.5 px-4 py-1 rounded-xl bg-slate-900 text-teal-500  w-fit
              sm:text-lg text-sm font-semibold'>
             {date}
           </h1>
