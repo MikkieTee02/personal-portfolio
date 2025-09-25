@@ -7,12 +7,17 @@ import Skills from './Skills/Skills'
 import Reviews from './Reviews/Reviews'
 import Contact from './Contact/Contact'
 import ScrollToTop from './ScrollToTop'
+import About from './About/About'
 
 const Home = () => {
   return (
      <div className='overflow-hidden'>
       <section id="hero">
         <Hero />
+      </section>
+
+        <section id="about">
+        <About/>
       </section>
 
       <section id="services">
